@@ -1,0 +1,75 @@
+:root {
+    --cor-principal: #1F4E79;
+    --cor-hover: #2E75B6;
+    --cor-foco: #C00000;
+    --cor-fundo-pagina: #F2F2F2;
+    --cor-fundo-cartao: #FFFFFF;
+    --espaco-padrao: 20px;
+    --espaco-cartao: 15px;
+    --raio-borda: 5px;
+}
+
+body {
+    background-color: var(--cor-fundo-pagina);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--cor-principal);
+    padding: var(--espaco-padrao);
+    text-align: center;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+header p {
+    color: #FFFFFF;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+main {
+    padding: var(--espaco-padrao);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cartao {
+    background-color: var(--cor-fundo-cartao);
+    padding: var(--espaco-cartao);
+    border-left: 5px solid var(--cor-principal);
+    margin-bottom: var(--espaco-cartao);
+}
+
+.cartao h2 {
+    color: var(--cor-principal);
+    margin-top: 0;
+}
+
+.contagem {
+    font-weight: bold;
+    color: var(--cor-principal);
+    font-size: 20px;
+}
+
+.apoiar {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+}
+
+.apoiar:hover {
+    background-color: var(--cor-hover);
+}
+
+.apoiar:focus {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 2px;
+}
